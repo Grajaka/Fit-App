@@ -10,8 +10,8 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <h1 id="welcome"><b>BIENVENIDO! {{ title.toUpperCase()}}</b></h1>
           </ul>
-          <a class="btn btn-info btn-login" href="RouterOutlet()"><b>INGRESAR</b></a>
-          <a class="btn btn-success btn-register" ><b>REGISTRARSE </b></a>
+          <a class="btn btn-info btn-login" (click)="goTo('/login')" routerLinkActive="router-link-active"  routerLinkActive="router-link-active" ><b>INGRESAR</b></a>
+          <a class="btn btn-success btn-register" (click)="goTo('/register')"><b>REGISTRARSE </b></a>
         </div>
       </div>
     </nav>
