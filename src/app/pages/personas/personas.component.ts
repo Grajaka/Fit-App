@@ -10,22 +10,56 @@ import * as $ from 'jquery';
   templateUrl: './personas.component.html',
   styleUrl: './personas.component.css'
 })
-export class PersonasComponent implements OnInit {
+export class PersonasComponent {
 
-  first: boolean = false;
-  oculto: boolean = false;
+  first: boolean = true;
+  second: boolean = false;
+  third: boolean = false;
+  four: boolean = false;
+  five: boolean = false;
+  // oculto: boolean = false;
 
-  ngOnInit() {
-    window.onload = function() {
-      // document: string = document.getElementById("first").style.display = "none";
-    };
-  };
-
-
-  NextWindows():void{
-    console.log('Hola mundo');
-
-    this.first = true;
+  NextWindows(data: string){
+     switch(data){
+      case 'first':
+        this.first = false;
+        this.second = true;
+        break;
+      case 'second':
+        this.second = false;
+        this.third = true;
+        break;
+      case 'third':
+        this.third = false;
+        this.four= true
+        break;
+      case 'four':
+        this.four = false;
+        this.five= true
+        break;
+     }
   }
-
+  BackWindows(data: string){
+    switch(data){
+     case 'first':
+       this.first = true;
+       this.second = false;
+       break;
+     case 'second':
+       this.second = true;
+       this.third = false;
+       break;
+     case 'third':
+       this.third = true;
+       this.four= false
+       break;
+     case 'four':
+       this.four = true;
+       this.five= false
+       break;
+    }
+  }
+  goTo(url:string){
+    window.location.href = url;
+  }
 }

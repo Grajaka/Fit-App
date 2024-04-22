@@ -1,0 +1,29 @@
+#navbar{
+  background-color: #737373;
+}
+
+#welcome
+{
+  font-family: 'Drukaatie burti', sans-serif;
+  color: #ffff;
+  margin-left: 10px;
+
+}
+
+.btn{
+  border-radius: 50px;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.btn-premium{
+  /* background-color: red; */
+  border: 0px;
+  color: #ffff;
+}
+
+.btn-user{
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}

@@ -5,7 +5,7 @@ import { RegisterComponent } from '../register/register.component';
 @Component({
   selector: 'app-welcome',
   standalone: true,
-  imports: [LoginComponent, RegisterComponent],
+  imports: [],
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.css'
 })
